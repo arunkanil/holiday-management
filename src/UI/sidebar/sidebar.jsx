@@ -2,7 +2,13 @@ import React from "react";
 import { withRouter, Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import caret from "../../assets/caret.svg";
-import { COUNTRY_URL, DEPARTMENT_URL, LEAVE_TYPE_URL, LEVEL_URL } from "../../constants/urls";
+import {
+  COUNTRY_URL,
+  DEPARTMENT_URL,
+  LEAVE_TYPE_URL,
+  LEVEL_URL,
+  PUBLICHOLIDAYS_URL,
+} from "../../constants/urls";
 
 let test = ["Dashboard", "Leave Report", "Leave Approval", "Employee Mgmnt."];
 
@@ -40,6 +46,7 @@ export default class Sidebar extends React.Component {
             />
           </a>
           <div className="dropdown-container sider-list">
+            <Link to={PUBLICHOLIDAYS_URL}>Public holidays</Link>
             <Link to={DEPARTMENT_URL}>Department</Link>
             <Link to={LEAVE_TYPE_URL}>Leave type</Link>
             <Link to={LEVEL_URL}>Level</Link>
