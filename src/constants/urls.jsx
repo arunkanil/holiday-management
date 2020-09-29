@@ -6,7 +6,7 @@ export const COUNTRY_URL = "/masters/country";
 export const PUBLICHOLIDAYS_URL = "/masters/public_holidays";
 
 // API URLS
-export const BASE_URL = "http://localhost:21021/";
+export const BASE_URL = "http://amhms.azurewebsites.net/";
 export const GET_DEPARTMENT = "api/services/app/Department/GetAll";
 export const POST_DEPARTMENT = "api/services/app/Department/CreateOrEdit";
 export const DELETE_DEPARTMENT = "api/services/app/Department/Delete?id=";

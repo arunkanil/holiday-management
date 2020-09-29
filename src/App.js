@@ -20,7 +20,7 @@ import PublicHolidayMaster from "./Masters/PublicHolidayMaster";
 
 class App extends React.Component {
   render() {
-    axios.defaults.baseURL = "http://localhost:21021/";
+    axios.defaults.baseURL = "http://amhms.azurewebsites.net/";
     return (
       <Router>
         <Sidebar />
