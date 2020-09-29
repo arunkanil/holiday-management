@@ -49,7 +49,7 @@ export default class Sidebar extends React.Component {
             <Link to={PUBLICHOLIDAYS_URL}>Public holidays</Link>
             <Link to={DEPARTMENT_URL}>Department</Link>
             <Link to={LEAVE_TYPE_URL}>Leave type</Link>
-            <Link to={LEVEL_URL}>Level</Link>
+            {/* <Link to={LEVEL_URL}>Level</Link> */}
             <Link to={COUNTRY_URL}>Country</Link>
           </div>
         </div>
