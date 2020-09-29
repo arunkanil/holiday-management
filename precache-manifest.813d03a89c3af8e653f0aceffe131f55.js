@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7fa25c57f2915659eea63128c8b9dc94",
+    "revision": "6d5bb5852b3bcca24d5bd85d87f169d7",
     "url": "/holiday-management/index.html"
   },
   {
-    "revision": "82804d686a82ba947463",
+    "revision": "b1359ed3ac2da8d8cc34",
     "url": "/holiday-management/static/css/2.07bbe244.chunk.css"
   },
   {
-    "revision": "5b122948260e2ac823d9",
+    "revision": "5f3cd13f8866fcd2ee26",
     "url": "/holiday-management/static/css/main.658c8fc5.chunk.css"
   },
   {
-    "revision": "82804d686a82ba947463",
-    "url": "/holiday-management/static/js/2.7c5fe7ef.chunk.js"
+    "revision": "b1359ed3ac2da8d8cc34",
+    "url": "/holiday-management/static/js/2.ed3a7131.chunk.js"
   },
   {
     "revision": "23970fbe20904b9641d04c74c2b758fb",
-    "url": "/holiday-management/static/js/2.7c5fe7ef.chunk.js.LICENSE.txt"
+    "url": "/holiday-management/static/js/2.ed3a7131.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5b122948260e2ac823d9",
-    "url": "/holiday-management/static/js/main.469f6a7e.chunk.js"
+    "revision": "5f3cd13f8866fcd2ee26",
+    "url": "/holiday-management/static/js/main.2e645e3c.chunk.js"
   },
   {
     "revision": "8b7ef4aa756a756099d7",
