@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/holiday-management/static/css/main.658c8fc5.chunk.css",
+    "main.js": "/holiday-management/static/js/main.6dd3899e.chunk.js",
+    "main.js.map": "/holiday-management/static/js/main.6dd3899e.chunk.js.map",
+    "runtime-main.js": "/holiday-management/static/js/runtime-main.c28b8397.js",
+    "runtime-main.js.map": "/holiday-management/static/js/runtime-main.c28b8397.js.map",
+    "static/css/2.07bbe244.chunk.css": "/holiday-management/static/css/2.07bbe244.chunk.css",
+    "static/js/2.7c5fe7ef.chunk.js": "/holiday-management/static/js/2.7c5fe7ef.chunk.js",
+    "static/js/2.7c5fe7ef.chunk.js.map": "/holiday-management/static/js/2.7c5fe7ef.chunk.js.map",
+    "index.html": "/holiday-management/index.html",
+    "precache-manifest.3357f0dab48689ac89e25503af7739e1.js": "/holiday-management/precache-manifest.3357f0dab48689ac89e25503af7739e1.js",
+    "service-worker.js": "/holiday-management/service-worker.js",
+    "static/css/2.07bbe244.chunk.css.map": "/holiday-management/static/css/2.07bbe244.chunk.css.map",
+    "static/css/main.658c8fc5.chunk.css.map": "/holiday-management/static/css/main.658c8fc5.chunk.css.map",
+    "static/js/2.7c5fe7ef.chunk.js.LICENSE.txt": "/holiday-management/static/js/2.7c5fe7ef.chunk.js.LICENSE.txt",
+    "static/media/caret.svg": "/holiday-management/static/media/caret.1f9bf388.svg",
+    "static/media/deleteIcon.svg": "/holiday-management/static/media/deleteIcon.2999d7db.svg",
+    "static/media/edit.svg": "/holiday-management/static/media/edit.2ab22136.svg",
+    "static/media/logo.png": "/holiday-management/static/media/logo.348dee44.png",
+    "static/media/logout.svg": "/holiday-management/static/media/logout.f912f9ad.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c28b8397.js",
+    "static/css/2.07bbe244.chunk.css",
+    "static/js/2.7c5fe7ef.chunk.js",
+    "static/css/main.658c8fc5.chunk.css",
+    "static/js/main.6dd3899e.chunk.js"
+  ]
+}
