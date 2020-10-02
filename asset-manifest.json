@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/holiday-management/static/css/main.658c8fc5.chunk.css",
-    "main.js": "/holiday-management/static/js/main.2e645e3c.chunk.js",
-    "main.js.map": "/holiday-management/static/js/main.2e645e3c.chunk.js.map",
+    "main.css": "/holiday-management/static/css/main.479f625c.chunk.css",
+    "main.js": "/holiday-management/static/js/main.627399b9.chunk.js",
+    "main.js.map": "/holiday-management/static/js/main.627399b9.chunk.js.map",
     "runtime-main.js": "/holiday-management/static/js/runtime-main.c28b8397.js",
     "runtime-main.js.map": "/holiday-management/static/js/runtime-main.c28b8397.js.map",
     "static/css/2.07bbe244.chunk.css": "/holiday-management/static/css/2.07bbe244.chunk.css",
-    "static/js/2.ed3a7131.chunk.js": "/holiday-management/static/js/2.ed3a7131.chunk.js",
-    "static/js/2.ed3a7131.chunk.js.map": "/holiday-management/static/js/2.ed3a7131.chunk.js.map",
+    "static/js/2.88c9198a.chunk.js": "/holiday-management/static/js/2.88c9198a.chunk.js",
+    "static/js/2.88c9198a.chunk.js.map": "/holiday-management/static/js/2.88c9198a.chunk.js.map",
     "index.html": "/holiday-management/index.html",
-    "precache-manifest.813d03a89c3af8e653f0aceffe131f55.js": "/holiday-management/precache-manifest.813d03a89c3af8e653f0aceffe131f55.js",
+    "precache-manifest.167d25a734c9cf1e58177804be2b3887.js": "/holiday-management/precache-manifest.167d25a734c9cf1e58177804be2b3887.js",
     "service-worker.js": "/holiday-management/service-worker.js",
     "static/css/2.07bbe244.chunk.css.map": "/holiday-management/static/css/2.07bbe244.chunk.css.map",
-    "static/css/main.658c8fc5.chunk.css.map": "/holiday-management/static/css/main.658c8fc5.chunk.css.map",
-    "static/js/2.ed3a7131.chunk.js.LICENSE.txt": "/holiday-management/static/js/2.ed3a7131.chunk.js.LICENSE.txt",
+    "static/css/main.479f625c.chunk.css.map": "/holiday-management/static/css/main.479f625c.chunk.css.map",
+    "static/js/2.88c9198a.chunk.js.LICENSE.txt": "/holiday-management/static/js/2.88c9198a.chunk.js.LICENSE.txt",
     "static/media/caret.svg": "/holiday-management/static/media/caret.1f9bf388.svg",
     "static/media/deleteIcon.svg": "/holiday-management/static/media/deleteIcon.2999d7db.svg",
     "static/media/edit.svg": "/holiday-management/static/media/edit.2ab22136.svg",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.c28b8397.js",
     "static/css/2.07bbe244.chunk.css",
-    "static/js/2.ed3a7131.chunk.js",
-    "static/css/main.658c8fc5.chunk.css",
-    "static/js/main.2e645e3c.chunk.js"
+    "static/js/2.88c9198a.chunk.js",
+    "static/css/main.479f625c.chunk.css",
+    "static/js/main.627399b9.chunk.js"
   ]
 }
