@@ -6,7 +6,7 @@ import {
   COUNTRY_URL,
   DEPARTMENT_URL,
   LEAVE_TYPE_URL,
-  LEVEL_URL,
+  LEAVENTITLEMENT_URL,
   PUBLICHOLIDAYS_URL,
 } from "./constants/urls";
 import Dashboard from "./Dashboard/dashboard";
@@ -14,7 +14,7 @@ import Header from "./UI/Header/header";
 import CountryMaster from "./Masters/CountryMaster";
 import departmentMaster from "./Masters/DepartmentMaster";
 import LeaveTypeMaster from "./Masters/LeaveTypeMaster";
-import LevelMaster from "./Masters/LevelMaster";
+import LeaveEntitlementMaster from "./Masters/LeaveEntitlementMaster";
 import Sidebar from "./UI/sidebar/sidebar";
 import PublicHolidayMaster from "./Masters/PublicHolidayMaster";
 
@@ -31,7 +31,7 @@ class App extends React.Component {
             <Route path={DEPARTMENT_URL} component={departmentMaster} />
             <Route path={PUBLICHOLIDAYS_URL} component={PublicHolidayMaster} />
             <Route path={LEAVE_TYPE_URL} component={LeaveTypeMaster} />
-            <Route path={LEVEL_URL} component={LevelMaster} />
+            <Route path={LEAVENTITLEMENT_URL} component={LeaveEntitlementMaster} />
             <Route path={COUNTRY_URL} component={CountryMaster} />
           </Switch>
         </div>

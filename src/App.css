@@ -57,12 +57,12 @@
   color: white;
 }
 .sider-list {
-  padding-inline-start: 30px !important;
+  padding-inline-start: 10px !important;
 }
 .sidebar a:hover {
   background-color: #21aff9;
   color: white;
-  padding-left: 50px !important;
+  padding-left: 25px !important;
   transition-duration: 0.5s;
 }
 div.content {

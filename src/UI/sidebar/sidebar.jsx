@@ -6,7 +6,7 @@ import {
   COUNTRY_URL,
   DEPARTMENT_URL,
   LEAVE_TYPE_URL,
-  LEVEL_URL,
+  LEAVENTITLEMENT_URL,
   PUBLICHOLIDAYS_URL,
 } from "../../constants/urls";
 
@@ -14,13 +14,19 @@ let test = ["Dashboard", "Leave Report", "Leave Approval", "Employee Mgmnt."];
 
 export default class Sidebar extends React.Component {
   onDropdownClick = () => {
+    let dropdownCaret = document.getElementsByClassName("masterscaret");
+    dropdownCaret[0].style.transitionDuration = "0.5s";
+    if (dropdownCaret[0].style.transform === "rotate(180deg)") {
+      dropdownCaret[0].style.transform = "rotate(0deg)";
+    } else {
+      dropdownCaret[0].style.transform = "rotate(180deg)";
+    }
     let dropdownContent = document.getElementsByClassName("dropdown-container");
     if (dropdownContent[0].style.display === "block") {
       dropdownContent[0].style.display = "none";
     } else {
       dropdownContent[0].style.display = "block";
     }
-    console.log(dropdownContent[0].style);
   };
 
   render() {
@@ -40,17 +46,18 @@ export default class Sidebar extends React.Component {
           <a className="sider-list" onClick={this.onDropdownClick}>
             Masters
             <img
+              className="masterscaret float-right"
               src={caret}
-              style={{ width: "20px", marginLeft: "50px" }}
+              style={{ width: "20px" }}
               alt="logo"
             />
           </a>
           <div className="dropdown-container sider-list">
-            <Link to={PUBLICHOLIDAYS_URL}>Public holidays</Link>
             <Link to={DEPARTMENT_URL}>Department</Link>
             <Link to={LEAVE_TYPE_URL}>Leave type</Link>
-            {/* <Link to={LEVEL_URL}>Level</Link> */}
             <Link to={COUNTRY_URL}>Country</Link>
+            <Link to={PUBLICHOLIDAYS_URL}>Public holidays</Link>
+            <Link to={LEAVENTITLEMENT_URL}>Leave Entitlement</Link>
           </div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+import { filterParams } from "../UI/Utils/DateFilter";
+
 export const DepartmentMasterColumnDefs = [
     {
       headerName: "Id",
@@ -10,6 +12,10 @@ export const DepartmentMasterColumnDefs = [
     {
       headerName: "Department",
       field: "name",
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
       sortable: true,
       editable: false,
       resizable: true,
@@ -45,6 +51,10 @@ export const DepartmentMasterColumnDefs = [
     {
       headerName: "Country",
       field: "name",
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
       sortable: true,
       editable: false,
       resizable: true,
@@ -53,6 +63,10 @@ export const DepartmentMasterColumnDefs = [
     {
       headerName: "Code",
       field: "code",
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
       sortable: true,
       editable: false,
       resizable: true,
@@ -123,6 +137,10 @@ export const DepartmentMasterColumnDefs = [
     {
       headerName: "Leave Type",
       field: "name",
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
       sortable: true,
       editable: false,
       resizable: true,
@@ -158,6 +176,10 @@ export const DepartmentMasterColumnDefs = [
     {
       headerName: "Country",
       field: "countryName",
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
       sortable: true,
       editable: false,
       resizable: true,
@@ -167,6 +189,10 @@ export const DepartmentMasterColumnDefs = [
       headerName: "Name",
       field: "name",
       sortable: true,
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
       editable: false,
       resizable: true,
       // width: 350,
@@ -182,6 +208,8 @@ export const DepartmentMasterColumnDefs = [
     {
       headerName: "Date",
       field: "date",
+      filter: 'agDateColumnFilter',
+      filterParams: filterParams,
       sortable: true,
       editable: false,
       resizable: true,
@@ -191,10 +219,69 @@ export const DepartmentMasterColumnDefs = [
     {
       headerName: "Year",
       field: "year",
+      filter: 'agNumberColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
       sortable: true,
       editable: false,
       resizable: true,
       width: 100,
+    },
+    {
+      headerName: "Actions",
+      field: "actions",
+      sortable: false,
+      editable: false,
+      resizable: false,
+      width: 70,
+      cellRenderer: "statusRenderer",
+    },
+  ];
+  export const LeaveEntitlementMasterColumnDefs = [
+    {
+      headerName: "Id",
+      field: "id",
+      sortable: true,
+      editable: false,
+      resizable: true,
+      width: 70,
+    },
+    {
+      headerName: "Country",
+      field: "contryName",
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
+      sortable: true,
+      editable: false,
+      resizable: true,
+      // width: 350,
+    },
+    {
+      headerName: "Leave Type",
+      field: "leaveTypeName",
+      sortable: true,
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
+      editable: false,
+      resizable: true,
+      // width: 350,
+    },
+    {
+      headerName: "Leave Count",
+      field: "leaveCount",
+      sortable: true,
+      filter: 'agNumberColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
+      editable: false,
+      resizable: true,
+      // width: 100,
     },
     {
       headerName: "Actions",

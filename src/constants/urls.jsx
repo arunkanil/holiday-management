@@ -4,6 +4,8 @@ export const LEAVE_TYPE_URL = "/masters/leave_type";
 export const LEVEL_URL = "/masters/level";
 export const COUNTRY_URL = "/masters/country";
 export const PUBLICHOLIDAYS_URL = "/masters/public_holidays";
+export const LEAVENTITLEMENT_URL = "/masters/leave_entitlement";
+
 
 // API URLS
 export const BASE_URL = "http://amhms.azurewebsites.net/";
@@ -19,3 +21,6 @@ export const DELETE_LEAVETYPE = "api/services/app/LeaveType/Delete?id=";
 export const GET_PUBLICHOLIDAY = "api/services/app/PublicHoliday/GetAll";
 export const POST_PUBLICHOLIDAY = "api/services/app/PublicHoliday/CreateOrEdit";
 export const DELETE_PUBLICHOLIDAY = "api/services/app/PublicHoliday/Delete?id=";
+export const GET_LEAVENTITLEMENT = "api/services/app/LeaveEntitlement/GetAll";
+export const POST_LEAVENTITLEMENT = "/api/services/app/LeaveEntitlement/CreateOrEdit";
+export const DELETE_LEAVENTITLEMENT = "api/services/app/LeaveEntitlement/Delete?id=";
