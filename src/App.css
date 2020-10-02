@@ -88,6 +88,16 @@ div.content {
     margin-left: 0;
     transition-duration: 0.5s;
   }
+  div.content {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 2rem 2rem !important;
+    height: 100vh;
+    background: white;
+  }
+  
 }
 
 @media screen and (max-width: 400px) {
