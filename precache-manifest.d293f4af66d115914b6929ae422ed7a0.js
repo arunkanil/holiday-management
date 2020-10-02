@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac5203503f85a4b766d5525d420aa86e",
+    "revision": "7855528e1e0ae5409d98b2954355efc0",
     "url": "/holiday-management/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/holiday-management/static/css/2.07bbe244.chunk.css"
   },
   {
-    "revision": "5d086a93e3383085b341",
-    "url": "/holiday-management/static/css/main.479f625c.chunk.css"
+    "revision": "b827a17bc99a439a453a",
+    "url": "/holiday-management/static/css/main.7db20d71.chunk.css"
   },
   {
     "revision": "283bfeb7d4dcebeb4587",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/holiday-management/static/js/2.88c9198a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5d086a93e3383085b341",
+    "revision": "b827a17bc99a439a453a",
     "url": "/holiday-management/static/js/main.627399b9.chunk.js"
   },
   {
