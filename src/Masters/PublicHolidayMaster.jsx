@@ -155,7 +155,7 @@ export default class PublicHolidayMaster extends React.Component {
         >
           <Form onSubmit={this.handleSubmit}>
             <Form.Group controlId="exampleForm.ControlSelect1">
-              <Form.Label className="required">Country</Form.Label>
+              <Form.Label >Country <span className="required">*</span></Form.Label>
               <Form.Control
                 as="select"
                 name="country"
@@ -171,7 +171,7 @@ export default class PublicHolidayMaster extends React.Component {
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlSelect2">
-              <Form.Label>Date</Form.Label>
+              <Form.Label>Date <span className="required">*</span></Form.Label>
               <Form.Control
                 type="date"
                 required
@@ -183,7 +183,7 @@ export default class PublicHolidayMaster extends React.Component {
               <Form.Check type="checkbox" label="Recurring holiday" />
             </Form.Group>
             <Form.Group controlId="formDepartmentName">
-              <Form.Label>Holiday Name</Form.Label>
+              <Form.Label>Holiday Name <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 type="text"
@@ -193,10 +193,11 @@ export default class PublicHolidayMaster extends React.Component {
               />
             </Form.Group>
             <Form.Group controlId="formUniqueID">
-              <Form.Label>Description</Form.Label>
+              <Form.Label>Description <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 as="textarea"
+                required
                 rows="2"
                 name="description"
                 placeholder="Enter description"
@@ -236,7 +237,7 @@ export default class PublicHolidayMaster extends React.Component {
         >
           <Form onSubmit={this.onEditConfirm}>
             <Form.Group controlId="exampleForm.ControlSelect1">
-              <Form.Label>Country</Form.Label>
+              <Form.Label>Country <span className="required">*</span></Form.Label>
               <Form.Control
                 as="select"
                 name="edited_country"
@@ -253,7 +254,7 @@ export default class PublicHolidayMaster extends React.Component {
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlSelect2">
-              <Form.Label>Date</Form.Label>
+              <Form.Label>Date <span className="required">*</span></Form.Label>
               <Form.Control
                 type="datetime-local"
                 required
@@ -263,7 +264,7 @@ export default class PublicHolidayMaster extends React.Component {
               />
             </Form.Group>
             <Form.Group controlId="formDepartmentName">
-              <Form.Label>Holiday Name</Form.Label>
+              <Form.Label>Holiday Name <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 defaultValue={this.state.objEditable.name}
@@ -274,11 +275,12 @@ export default class PublicHolidayMaster extends React.Component {
               />
             </Form.Group>
             <Form.Group controlId="formUniqueID">
-              <Form.Label>Description</Form.Label>
+              <Form.Label>Description <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 defaultValue={this.state.objEditable.description}
                 as="textarea"
+                required
                 rows="2"
                 name="edited_description"
                 placeholder="Enter description"

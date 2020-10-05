@@ -135,7 +135,7 @@ export default class DepartmentMaster extends React.Component {
         >
           <Form onSubmit={this.handleSubmit}>
             <Form.Group controlId="formDepartmentName">
-              <Form.Label>Department Name</Form.Label>
+              <Form.Label>Department Name <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 type="text"
@@ -188,7 +188,7 @@ export default class DepartmentMaster extends React.Component {
         >
           <Form onSubmit={this.onEditConfirm}>
             <Form.Group controlId="formDepartmentName">
-              <Form.Label>Department Name</Form.Label>
+              <Form.Label>Department Name <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 type="text"

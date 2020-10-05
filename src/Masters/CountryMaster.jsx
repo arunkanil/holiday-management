@@ -130,7 +130,7 @@ export default class CountryMaster extends React.Component {
         >
           <Form onSubmit={this.handleSubmit}>
             <Form.Group controlId="formCountryName">
-              <Form.Label>Country Name</Form.Label>
+              <Form.Label>Country Name <span className="required">*</span></Form.Label>
               <Form.Control
                 type="text"
                 required
@@ -140,7 +140,7 @@ export default class CountryMaster extends React.Component {
               />
             </Form.Group>
             <Form.Group controlId="formUniqueID">
-              <Form.Label>Unique Code</Form.Label>
+              <Form.Label>Unique Code <span className="required">*</span></Form.Label>
               <Form.Control
                 type="text"
                 required
@@ -183,7 +183,7 @@ export default class CountryMaster extends React.Component {
         >
           <Form onSubmit={this.onEditConfirm}>
             <Form.Group controlId="formDepartmentName">
-              <Form.Label>Country Name</Form.Label>
+              <Form.Label>Country Name <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 type="text"
@@ -194,7 +194,7 @@ export default class CountryMaster extends React.Component {
               />
             </Form.Group>
             <Form.Group controlId="formUniqueID">
-              <Form.Label>Unique Code</Form.Label>
+              <Form.Label>Unique Code <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 defaultValue={this.state.objEditable.code}

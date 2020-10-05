@@ -135,7 +135,7 @@ export default class LeaveTypeMaster extends React.Component {
         >
           <Form onSubmit={this.handleSubmit}>
             <Form.Group controlId="formLeaveType">
-              <Form.Label>Leave Type</Form.Label>
+              <Form.Label>Leave Type <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 type="text"
@@ -188,7 +188,7 @@ export default class LeaveTypeMaster extends React.Component {
         >
           <Form onSubmit={this.onEditConfirm}>
             <Form.Group controlId="formDepartmentName">
-              <Form.Label>Leave Type</Form.Label>
+              <Form.Label>Leave Type <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 type="text"

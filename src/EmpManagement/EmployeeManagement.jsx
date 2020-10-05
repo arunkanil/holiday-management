@@ -210,7 +210,7 @@ export default class EmployeeManagement extends React.Component {
         >
           <Form onSubmit={this.handleSubmit}>
             <Form.Group>
-              <Form.Label>Name</Form.Label>
+              <Form.Label>Name <span className="required">*</span></Form.Label>
               <Form.Row>
                 <Col>
                   <Form.Control
@@ -233,7 +233,7 @@ export default class EmployeeManagement extends React.Component {
               </Form.Row>
             </Form.Group>
             <Form.Group>
-              <Form.Label>E-mail</Form.Label>
+              <Form.Label>E-mail <span className="required">*</span></Form.Label>
               <Form.Control
                 size="sm"
                 onChange={this.formChange}
@@ -244,7 +244,7 @@ export default class EmployeeManagement extends React.Component {
               />
             </Form.Group>
             <Form.Group>
-              <Form.Label>Employee ID</Form.Label>
+              <Form.Label>Employee ID <span className="required">*</span></Form.Label>
               <Form.Control
                 size="sm"
                 required
@@ -254,9 +254,10 @@ export default class EmployeeManagement extends React.Component {
               />
             </Form.Group>
             <Form.Group>
-              <Form.Label>Office Location</Form.Label>
+              <Form.Label>Office Location <span className="required">*</span></Form.Label>
               <Form.Control
                 size="sm"
+                required
                 onChange={this.formChange}
                 name="officeLocation"
                 placeholder="Enter office location"
@@ -264,10 +265,11 @@ export default class EmployeeManagement extends React.Component {
             </Form.Group>
             {formselect.map((item) => (
               <Form.Group>
-                <Form.Label>{item.name}</Form.Label>
+                <Form.Label>{item.name} <span className="required">*</span></Form.Label>
                 <Form.Control
                   size="sm"
                   as="select"
+                  required
                   name={item.id}
                   onChange={this.formChange}
                 >
@@ -314,7 +316,7 @@ export default class EmployeeManagement extends React.Component {
         >
           <Form onSubmit={this.onEditConfirm}>
             <Form.Group>
-              <Form.Label>Name</Form.Label>
+              <Form.Label>Name <span className="required">*</span></Form.Label>
               <Form.Row>
                 <Col>
                   <Form.Control
@@ -337,7 +339,7 @@ export default class EmployeeManagement extends React.Component {
               </Form.Row>
             </Form.Group>
             <Form.Group>
-              <Form.Label>E-mail</Form.Label>
+              <Form.Label>E-mail <span className="required">*</span></Form.Label>
               <Form.Control
                 size="sm"
                 onChange={this.formChange}
@@ -348,7 +350,7 @@ export default class EmployeeManagement extends React.Component {
               />
             </Form.Group>
             <Form.Group>
-              <Form.Label>Employee ID</Form.Label>
+              <Form.Label>Employee ID <span className="required">*</span></Form.Label>
               <Form.Control
                 size="sm"
                 required
@@ -358,9 +360,10 @@ export default class EmployeeManagement extends React.Component {
               />
             </Form.Group>
             <Form.Group>
-              <Form.Label>Office Location</Form.Label>
+              <Form.Label>Office Location <span className="required">*</span></Form.Label>
               <Form.Control
                 size="sm"
+                required
                 onChange={this.formChange}
                 name="edited_officeLocation"
                 defaultValue={this.state.objEditable.officeLocation}
@@ -368,10 +371,11 @@ export default class EmployeeManagement extends React.Component {
             </Form.Group>
             {formselect.map((item) => (
               <Form.Group>
-                <Form.Label>{item.name}</Form.Label>
+                <Form.Label>{item.name} <span className="required">*</span></Form.Label>
                 <Form.Control
                   size="sm"
                   as="select"
+                  required
                   name={item.editedid}
                   defaultValue={this.state.objEditable[item.id]}
                   onChange={this.formChange}

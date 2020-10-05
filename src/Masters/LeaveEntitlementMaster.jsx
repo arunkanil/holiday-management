@@ -156,7 +156,7 @@ export default class LeaveEntitlementMaster extends React.Component {
         >
           <Form onSubmit={this.handleSubmit}>
             <Form.Group controlId="exampleForm.ControlSelect1">
-              <Form.Label>Country</Form.Label>
+              <Form.Label>Country <span className="required">*</span></Form.Label>
               <Form.Control
                 as="select"
                 required
@@ -172,7 +172,7 @@ export default class LeaveEntitlementMaster extends React.Component {
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlSelect2">
-              <Form.Label>Leave Type</Form.Label>
+              <Form.Label>Leave Type <span className="required">*</span></Form.Label>
               <Form.Control
                 as="select"
                 required
@@ -188,7 +188,7 @@ export default class LeaveEntitlementMaster extends React.Component {
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="formDepartmentName">
-              <Form.Label>Leave Count</Form.Label>
+              <Form.Label>Leave Count <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 type="text"
@@ -231,7 +231,7 @@ export default class LeaveEntitlementMaster extends React.Component {
         >
           <Form onSubmit={this.onEditConfirm}>
             <Form.Group controlId="exampleForm.ControlSelect1">
-              <Form.Label>Country</Form.Label>
+              <Form.Label>Country <span className="required">*</span></Form.Label>
               <Form.Control
                 as="select"
                 required
@@ -248,7 +248,7 @@ export default class LeaveEntitlementMaster extends React.Component {
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlSelect2">
-              <Form.Label>Leave Type</Form.Label>
+              <Form.Label>Leave Type <span className="required">*</span></Form.Label>
               <Form.Control
                 as="select"
                 required
@@ -265,7 +265,7 @@ export default class LeaveEntitlementMaster extends React.Component {
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="formDepartmentName">
-              <Form.Label>Leave Count</Form.Label>
+              <Form.Label>Leave Count <span className="required">*</span></Form.Label>
               <Form.Control
                 onChange={this.formChange}
                 defaultValue={this.state.objEditable.leaveCount}
