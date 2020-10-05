@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/holiday-management/precache-manifest.d293f4af66d115914b6929ae422ed7a0.js"
+  "/holiday-management/precache-manifest.83d9fc14ca9089758ac038562d311112.js"
 );
 
 self.addEventListener('message', (event) => {
