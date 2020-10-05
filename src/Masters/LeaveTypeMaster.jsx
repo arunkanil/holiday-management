@@ -139,6 +139,7 @@ export default class LeaveTypeMaster extends React.Component {
               <Form.Control
                 onChange={this.formChange}
                 type="text"
+                required
                 name="name"
                 placeholder="Enter leave type"
               />
@@ -191,6 +192,7 @@ export default class LeaveTypeMaster extends React.Component {
               <Form.Control
                 onChange={this.formChange}
                 type="text"
+                required
                 defaultValue={this.state.objEditable.name}
                 name="edited_name"
                 placeholder="Enter name"

@@ -133,6 +133,7 @@ export default class CountryMaster extends React.Component {
               <Form.Label>Country Name</Form.Label>
               <Form.Control
                 type="text"
+                required
                 onChange={this.formChange}
                 name="name"
                 placeholder="Enter name"
@@ -142,6 +143,7 @@ export default class CountryMaster extends React.Component {
               <Form.Label>Unique Code</Form.Label>
               <Form.Control
                 type="text"
+                required
                 onChange={this.formChange}
                 name="code"
                 placeholder="Enter code"
@@ -185,6 +187,7 @@ export default class CountryMaster extends React.Component {
               <Form.Control
                 onChange={this.formChange}
                 type="text"
+                required
                 defaultValue={this.state.objEditable.name}
                 name="edited_name"
                 placeholder="Enter name"
@@ -196,6 +199,7 @@ export default class CountryMaster extends React.Component {
                 onChange={this.formChange}
                 defaultValue={this.state.objEditable.code}
                 name="edited_code"
+                required
                 placeholder="Enter code"
               />
             </Form.Group>

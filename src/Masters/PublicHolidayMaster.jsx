@@ -19,7 +19,7 @@ import {
 
 const frameworkComponents = {
   statusRenderer: ActionRenderer,
-  dateRenderer: DateRenderer
+  dateRenderer: DateRenderer,
 };
 
 export default class PublicHolidayMaster extends React.Component {
@@ -155,10 +155,11 @@ export default class PublicHolidayMaster extends React.Component {
         >
           <Form onSubmit={this.handleSubmit}>
             <Form.Group controlId="exampleForm.ControlSelect1">
-              <Form.Label>Country</Form.Label>
+              <Form.Label className="required">Country</Form.Label>
               <Form.Control
                 as="select"
                 name="country"
+                required
                 onChange={this.formChange}
               >
                 <option value="" disabled selected hidden>
@@ -173,9 +174,13 @@ export default class PublicHolidayMaster extends React.Component {
               <Form.Label>Date</Form.Label>
               <Form.Control
                 type="date"
+                required
                 name="date"
                 onChange={this.formChange}
               />
+            </Form.Group>
+            <Form.Group id="formGridCheckbox">
+              <Form.Check type="checkbox" label="Recurring holiday" />
             </Form.Group>
             <Form.Group controlId="formDepartmentName">
               <Form.Label>Holiday Name</Form.Label>
@@ -183,6 +188,7 @@ export default class PublicHolidayMaster extends React.Component {
                 onChange={this.formChange}
                 type="text"
                 name="name"
+                required
                 placeholder="Enter name"
               />
             </Form.Group>
@@ -234,6 +240,7 @@ export default class PublicHolidayMaster extends React.Component {
               <Form.Control
                 as="select"
                 name="edited_country"
+                required
                 defaultValue={this.state.objEditable.contryId}
                 onChange={this.formChange}
               >
@@ -249,6 +256,7 @@ export default class PublicHolidayMaster extends React.Component {
               <Form.Label>Date</Form.Label>
               <Form.Control
                 type="datetime-local"
+                required
                 name="edited_date"
                 defaultValue={this.state.objEditable.date}
                 onChange={this.formChange}
@@ -260,6 +268,7 @@ export default class PublicHolidayMaster extends React.Component {
                 onChange={this.formChange}
                 defaultValue={this.state.objEditable.name}
                 type="text"
+                required
                 name="edited_name"
                 placeholder="Enter name"
               />

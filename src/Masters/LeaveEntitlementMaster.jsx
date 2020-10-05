@@ -159,6 +159,7 @@ export default class LeaveEntitlementMaster extends React.Component {
               <Form.Label>Country</Form.Label>
               <Form.Control
                 as="select"
+                required
                 name="contryId"
                 onChange={this.formChange}
               >
@@ -174,6 +175,7 @@ export default class LeaveEntitlementMaster extends React.Component {
               <Form.Label>Leave Type</Form.Label>
               <Form.Control
                 as="select"
+                required
                 name="leaveTypeId"
                 onChange={this.formChange}
               >
@@ -190,6 +192,7 @@ export default class LeaveEntitlementMaster extends React.Component {
               <Form.Control
                 onChange={this.formChange}
                 type="text"
+                required
                 name="leaveCount"
                 placeholder="Enter no. of leaves"
               />
@@ -231,6 +234,7 @@ export default class LeaveEntitlementMaster extends React.Component {
               <Form.Label>Country</Form.Label>
               <Form.Control
                 as="select"
+                required
                 name="edited_contryId"
                 defaultValue={this.state.objEditable.contryId}
                 onChange={this.formChange}
@@ -247,6 +251,7 @@ export default class LeaveEntitlementMaster extends React.Component {
               <Form.Label>Leave Type</Form.Label>
               <Form.Control
                 as="select"
+                required
                 name="edited_leaveTypeId"
                 defaultValue={this.state.objEditable.leaveTypeId}
                 onChange={this.formChange}
@@ -265,6 +270,7 @@ export default class LeaveEntitlementMaster extends React.Component {
                 onChange={this.formChange}
                 defaultValue={this.state.objEditable.leaveCount}
                 type="text"
+                required
                 name="edited_leaveCount"
               />
             </Form.Group>

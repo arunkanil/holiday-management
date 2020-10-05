@@ -120,3 +120,7 @@ div.content {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
