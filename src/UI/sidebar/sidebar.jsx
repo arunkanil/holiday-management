@@ -9,8 +9,7 @@ import {
   LEAVENTITLEMENT_URL,
   PUBLICHOLIDAYS_URL,
 } from "../../constants/urls";
-
-let test = ["Dashboard", "Leave Report", "Leave Approval", "Employee Mgmnt."];
+import { sider_menu } from "../../constants/sidermenu";
 
 export default class Sidebar extends React.Component {
   onDropdownClick = () => {
@@ -38,10 +37,10 @@ export default class Sidebar extends React.Component {
           alt="logo"
         />
         <div style={{ marginTop: "50px" }}>
-          {test.map((item) => (
-            <a className="sider-list">
-              <span className="menu-title"> {item} </span>
-            </a>
+          {sider_menu.map((item) => (
+            <Link className="sider-list" to={item.url}>
+                <span className="menu-title"> {item.name} </span>
+            </Link>
           ))}
           <a className="sider-list" onClick={this.onDropdownClick}>
             Masters

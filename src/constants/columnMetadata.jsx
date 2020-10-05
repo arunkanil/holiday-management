@@ -293,3 +293,67 @@ export const DepartmentMasterColumnDefs = [
       cellRenderer: "statusRenderer",
     },
   ];
+  export const EmployeeManagementColumnDefs = [
+    {
+      headerName: "Emp. ID",
+      field: "employeeId",
+      sortable: true,
+      editable: false,
+      resizable: true,
+      width: 70,
+    },
+    {
+      headerName: "Employee Name",
+      field: "firstName",
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
+      sortable: true,
+      editable: false,
+      resizable: true,
+      // width: 350,
+    },
+    {
+      headerName: "Designation",
+      field: "designation",
+      sortable: true,
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
+      editable: false,
+      resizable: true,
+    },
+    {
+      headerName: "Department",
+      field: "department",
+      sortable: true,
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
+      editable: false,
+      resizable: true,
+    },
+    {
+      headerName: "Approver",
+      field: "reportsToName",
+      sortable: true,
+      filter: 'agTextColumnFilter',
+      filterParams: {
+        buttons: ['reset'],
+      },
+      editable: false,
+      resizable: true,
+    },
+    {
+      headerName: "Actions",
+      field: "actions",
+      sortable: false,
+      editable: false,
+      resizable: false,
+      width: 70,
+      cellRenderer: "statusRenderer",
+    },
+  ];

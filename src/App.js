@@ -8,6 +8,7 @@ import {
   LEAVE_TYPE_URL,
   LEAVENTITLEMENT_URL,
   PUBLICHOLIDAYS_URL,
+  EMPLOYEE_MANAGEMENT_URL,
 } from "./constants/urls";
 import Dashboard from "./Dashboard/dashboard";
 import Header from "./UI/Header/header";
@@ -17,10 +18,11 @@ import LeaveTypeMaster from "./Masters/LeaveTypeMaster";
 import LeaveEntitlementMaster from "./Masters/LeaveEntitlementMaster";
 import Sidebar from "./UI/sidebar/sidebar";
 import PublicHolidayMaster from "./Masters/PublicHolidayMaster";
+import EmployeeManagement from "./EmpManagement/EmployeeManagement";
 
 class App extends React.Component {
   render() {
-    axios.defaults.baseURL = "https://amhms.azurewebsites.net/";
+    axios.defaults.baseURL = "http://localhost:21021/";
     return (
       <Router>
         <Sidebar />
@@ -31,8 +33,12 @@ class App extends React.Component {
             <Route path={DEPARTMENT_URL} component={departmentMaster} />
             <Route path={PUBLICHOLIDAYS_URL} component={PublicHolidayMaster} />
             <Route path={LEAVE_TYPE_URL} component={LeaveTypeMaster} />
-            <Route path={LEAVENTITLEMENT_URL} component={LeaveEntitlementMaster} />
+            <Route
+              path={LEAVENTITLEMENT_URL}
+              component={LeaveEntitlementMaster}
+            />
             <Route path={COUNTRY_URL} component={CountryMaster} />
+            <Route path={EMPLOYEE_MANAGEMENT_URL} component={EmployeeManagement} />
           </Switch>
         </div>
       </Router>
