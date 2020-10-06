@@ -72,14 +72,14 @@ export const DepartmentMasterColumnDefs = [
       resizable: true,
       // width: 350,
     },
-    {
-      headerName: "Paternity Leave Applicable",
-      field: "paternityLeaveApplicable",
-      sortable: true,
-      editable: false,
-      resizable: true,
-      // width: 350,
-    },
+    // {
+    //   headerName: "Paternity Leave Applicable",
+    //   field: "paternityLeaveApplicable",
+    //   sortable: true,
+    //   editable: false,
+    //   resizable: true,
+    //   // width: 350,
+    // },
     {
       headerName: "Actions",
       field: "actions",
