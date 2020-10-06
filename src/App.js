@@ -22,7 +22,9 @@ import EmployeeManagement from "./EmpManagement/EmployeeManagement";
 
 class App extends React.Component {
   render() {
-    axios.defaults.baseURL = "http://localhost:21021/";
+    axios.defaults.baseURL = "https://amhms.azurewebsites.net/";
+
+    // axios.defaults.baseURL = "http://localhost:21021/";
     return (
       <Router>
         <Sidebar />
